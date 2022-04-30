@@ -2,7 +2,7 @@ const HDWalletProvider = require('truffle-hdwallet-provider');
 const Web3 = require('web3');
 const { abi, bytecode } = require('./compile');
 
-const mnemonic = "they sponsor small hair slim chuckle verify purse risk birth sock legal";
+const mnemonic = "moment state swing hidden work wage dice father history company equal vivid";
 const provider = new HDWalletProvider(mnemonic, 'http://127.0.0.1:8545');
 
 const web3 = new Web3(provider)
