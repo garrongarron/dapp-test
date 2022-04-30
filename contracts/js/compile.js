@@ -23,7 +23,7 @@ const input = {
 
 const output = JSON.parse(solc.compile(JSON.stringify(input)));
 
-console.log(output)
+console.log('abi', JSON.stringify(output.contracts['MyCoin.sol'].MyCoin.abi))
 
 module.exports = {
     abi: output.contracts['MyCoin.sol'].MyCoin.abi,

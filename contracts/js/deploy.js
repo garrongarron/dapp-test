@@ -2,7 +2,7 @@ const HDWalletProvider = require('truffle-hdwallet-provider');
 const Web3 = require('web3');
 const { abi, bytecode } = require('./compile');
 
-const mnemonic = "cheese giraffe repair asset advance lens easily youth merge staff brief leg";
+const mnemonic = "they sponsor small hair slim chuckle verify purse risk birth sock legal";
 const provider = new HDWalletProvider(mnemonic, 'http://127.0.0.1:8545');
 
 const web3 = new Web3(provider)
@@ -19,7 +19,7 @@ const deploy = async () => {
         .deploy({ data: bytecode, arguments: argumentsContructor })
         .send({ gas: gasEstimated, from: accounts[0] })
 
-    console.log('Contract Address Created:', result._address)
+    console.log('Contract Address Created:', result.options.address)
 }
 
 deploy()
