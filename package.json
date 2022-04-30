@@ -1,0 +1,18 @@
+{
+  "name": "web3-exercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node ./contracts/js/compile.js",
+    "deploy": "node ./contracts/js/deploy.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "solc": "^0.8.13",
+    "truffle-hdwallet-provider": "^1.0.6",
+    "web3": "^1.7.3"
+  }
+}
